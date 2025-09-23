@@ -1,0 +1,426 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tran Ngoc Duy — Mobile Software Engineer (React Native)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #111111;
+        --muted: #444444;
+        --border: #d1d5db;
+        --chip-bg: #f3f4f6;
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 16px auto;
+        padding: 0 16px
+      }
+
+      .resume {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--bg)
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 16px;
+        padding: 20px;
+        border-bottom: 1px solid var(--border)
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 0
+      }
+
+      .role {
+        margin-top: 6px;
+        font-weight: 700;
+        font-size: 18px
+      }
+
+      .summary {
+        margin-top: 10px;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 15px
+      }
+
+      .contact {
+        justify-self: end;
+        text-align: right;
+        display: grid;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 14px
+      }
+
+      section {
+        padding: 14px 20px
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: .12em;
+        color: var(--muted);
+        margin: 0 0 8px;
+        text-transform: uppercase;
+        border-left: 4px solid #111;
+        padding-left: 8px
+      }
+
+      .item {
+        padding: 14px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #fff;
+        margin-bottom: 12px
+      }
+
+      .item h3 {
+        margin: 0 0 4px;
+        font-size: 18px;
+        font-weight: 700
+      }
+
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 6px
+      }
+
+      ul {
+        margin: 6px 0 0 20px;
+        padding: 0
+      }
+
+      li {
+        margin: 6px 0;
+        line-height: 1.55
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 6px
+      }
+
+      .chip {
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--chip-bg);
+        border: 1px solid var(--border);
+        font-size: 13px
+      }
+
+      .work .item {
+        margin-bottom: 16px
+      }
+
+      @media(max-width:800px) {
+        header {
+          grid-template-columns: 1fr
+        }
+
+        .contact {
+          justify-self: start;
+          text-align: left
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm
+      }
+
+      @media print {
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact
+        }
+
+        html,
+        body {
+          background: var(--bg);
+          color: var(--text)
+        }
+
+        .container {
+          max-width: 100%;
+          margin: 0;
+          padding: 0
+        }
+
+        .resume {
+          border: 1px solid var(--border);
+          border-radius: 12px
+        }
+
+        header {
+          border-bottom: 1px solid var(--border)
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none
+        }
+      }
+
+      .contact {
+        justify-self: end;
+        text-align: right;
+        display: grid;
+        gap: 6px;
+        color: #444;
+        font-size: 14px
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px
+      }
+
+      .contact-item svg {
+        width: 16px;
+        height: 16px;
+        display: inline-block
+      }
+
+      .ico-pin path,
+      .ico-phone path {
+        fill: #111
+      }
+
+      .ico-gmail path {
+        fill: #EA4335
+      }
+
+      .ico-github path {
+        fill: #181717
+      }
+
+      .ico-linkedin path {
+        fill: #0A66C2
+      }
+
+      .contact {
+        justify-self: end;
+        text-align: right;
+        display: grid;
+        gap: 6px;
+        color: #444;
+        font-size: 14px
+      }
+
+      .contact .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px
+      }
+
+      .contact .icon {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle
+      }
+
+      .icon.github path {
+        fill: #181717
+      }
+
+      .icon.linkedin path {
+        fill: #0A66C2
+      }
+
+      .icon.mail path {
+        fill: #EA4335
+      }
+
+      .icon.phone path,
+      .icon.pin path {
+        fill: #111
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="resume">
+        <header>
+          <div>
+            <h1>TRAN NGOC DUY</h1>
+            <div class="role">Mobile Software Engineer (React Native)</div>
+            <p class="summary">Passionate React Native Developer with extensive experience in building high-quality, cross-platform mobile applications. Specializing in optimizing UX/UI and integrating robust backend systems, I’ve contributed to 10+ projects. I excel in creating user-friendly, high-performance mobile apps.</p>
+          </div>
+          <div class="contact">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 11.2A3.2 3.2 0 1 1 12 6.8a3.2 3.2 0 0 1 0 6.4z">
+                </path>
+              </svg>
+              <span>Tan Son Nhat, Ho Chi Minh City</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2 5h20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2l10 6L22 7H2z">
+                </path>
+              </svg>
+              <a href="mailto:tranngocduy.it@gmail.com">tranngocduy.it@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C11.85 22 2 12.15 2 1a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.2 2.2z">
+                </path>
+              </svg>
+              <a href="tel:+84982316230">+84 982 316 230</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.88 3.17 9.02 7.57 10.48.55.1.75-.24.75-.53 0-.26-.01-1.12-.02-2.03-3.08.67-3.73-1.31-3.73-1.31-.5-1.27-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.47-2.46-.28-5.05-1.23-5.05-5.48 0-1.21.43-2.19 1.14-2.96-.11-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.13a10.6 10.6 0 012.78-.37c.94 0 1.88.12 2.77.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.53.22 2.66.11 2.94.71.77 1.14 1.75 1.14 2.96 0 4.26-2.6 5.2-5.07 5.47.39.34.73 1.01.73 2.05 0 1.48-.01 2.67-.01 3.04 0 .29.2.64.76.53a10.74 10.74 0 007.56-10.48C23.1 5.33 18.27.5 12 .5z">
+                </path>
+              </svg>
+              <a href="https://github.com/tranngocduy" target="_blank" rel="noreferrer">github.com/tranngocduy</a>
+            </div>
+          </div>
+        </header>
+
+        <section>
+          <h2>Highlights</h2>
+          <div class="item">
+            <ul>
+              <li>Build and maintain high-performance Android and iOS apps using React Native for global markets.</li>
+              <li>Publish apps on Play Store and App Store, ensuring compliance and quality.</li>
+              <li>Optimize app performance through memoization and bundle size reduction, delivering fast and secure user experiences.</li>
+              <li>Demonstrated expertise in developing cross-platform mobile applications that maintain consistent performance and design across iOS and Android devices.</li>
+              <li>Provide on-call support to ensure app uptime and rapid incident resolution.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="work">
+          <h2>Work Experience</h2>
+
+          <article class="item">
+            <h3>React Native Developer - Inspire Lab Technology</h3>
+            <div class="meta">05/2019 - Present · Ho Chi Minh City</div>
+            <ul>
+              <li>Contributed to the company's outsourcing projects in Fintech, trading applications, and social applications, leveraging React Native for cross-platform development to deliver scalable and secure solutions tailored to client needs. Key projects included:</li>
+              <ul>
+                <li><strong>Fintech / Trading App</strong>: Developed a robust fintech and trading application for Android and iOS, empowering users to manage financial transactions, trade assets, and access real-time market data, delivering a secure and seamless user experience.</li>
+                <strong>Key Features:</strong>
+                <ul>
+                  <li>Integrated <strong>WebSocket</strong> to fetch real-time price, enabling live market quotes and dynamic price updates for trading pairs, optimized for low-latency performance across diverse network conditions.</li>
+                  <li><strong>Implemented binary options trading functionality similar to ExpertOption</strong>, allowing users to place buy/sell orders with fixed payout structures and short-term expiry times, ensuring a seamless and intuitive trading experience.</li>
+                  <li><strong>Developed real-time crypto price chart display and spot trading order placement</strong>, allowing users to place buy/sell orders with fixed payout structures and short-term expiry times, ensuring a seamless and intuitive trading experience.</li>
+                  <li><strong>Implemented biometric authentication, app security, and auto-cancellation mechanisms</strong>, triggered by changes to PIN, face recognition, or fingerprint, enhancing user security and trust.</li>
+                </ul>
+                
+                <li><strong>Social App</strong>: Developed a dynamic trading community application for Android and iOS, enabling users to post content, comment, like, and livestream, fostering a highly interactive and engaging user experience</li>
+                <strong>Key Features:</strong>
+                <ul>
+                  <li>Implemented secure and seamless authentication options, including system accounts and social logins (e.g., Apple, Google, Facebook, Wechat), ensuring user-friendly and secure access.</li>
+                  <li>Integrated <strong>OneSignal</strong> for real-time push notifications, delivering instant alerts for user interactions (e.g., comments, likes) and new posts, significantly enhancing engagement and retention.</li>
+                  <li>Integrated livestream functionality using third-party streaming APIs, enabling real-time video streaming for users to host live trading sessions, with features such as live chat, viewer tracking, and adaptive stream quality for optimal performance across network conditions</li>
+                </ul>
+              </ul>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>React Native Developer - Haravan</h3>
+            <div class="meta">08/2017 - 05/2019</div>
+            <ul>
+              <li>Contributed to improving the development process, including optimizing the codebase and writing technical documentation.</li>
+              <li>Developed and maintained e-commerce and community applications for Android and iOS platforms, delivering high-performance, scalable solutions with exceptional user experiences. Key projects included</li>
+              <ul>
+                <li><strong>Haravan</strong>: Contributed to the company’s main application, focusing on optimizing sales processes and order management.</li>
+                <li><strong>Haraworks</strong>: Developed an internal application to support task management and team communication.</li>
+                <li><strong>Giấc Mơ Sữa Việt</strong>: Built an online retail application with features for ordering, order tracking.</li>
+                <li><strong>AeonEShop</strong>: Developed an e-commerce application for a supermarket chain, supporting product search, shopping cart, and push notifications.</li>
+              </ul>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>React Native Developer - Freelance</h3>
+            <ul>
+              <li><strong>GoldenBee (Android, iOS)</strong>: A gold shop management app integrated with UHDF RFID scanning for product management, invoice printing, gold sales, and purchasing functionalities, among others.</li>
+              <li><strong>AWPOS (Android)</strong>: A POS system for nail salons, supporting payment processing, employee management, and appointment scheduling.</li>
+              <li><strong>Chivi (Android, iOS)</strong>: An online story reading app with Text-to-Speech support for an enhanced reading experience.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="item">
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">React Native</span>
+              <span class="chip">Expo</span>
+              <span class="chip">React JS</span>
+              <span class="chip">Node JS</span>
+              <span class="chip">Redux</span>
+              <span class="chip">Zustand</span>
+              <span class="chip">React Query</span>
+              <span class="chip">RESTful APIs</span>
+              <span class="chip">WebSocket</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">OneSignal</span>
+              <span class="chip">Git</span>
+              <span class="chip">Xcode</span>
+              <span class="chip">Android Studio</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="item">
+            <p><strong>SGU – Saigon University</strong></p>
+            <p>Major: Information Technology (Software Engineering)</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
