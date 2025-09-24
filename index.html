@@ -271,6 +271,12 @@
       .icon.pin path {
         fill: #111
       }
+      
+      .technical-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 16px
+      }
 
     </style>
   </head>
@@ -339,13 +345,13 @@
             <ul>
               <li>Contributed to the company's outsourcing projects in Fintech, trading applications, and social applications, leveraging React Native for cross-platform development to deliver scalable and secure solutions tailored to client needs. Key projects included:</li>
               <ul>
-                <li><strong>Fintech / Trading App</strong>: Developed a robust fintech and trading application for Android and iOS, empowering users to manage financial transactions, trade assets, and access real-time market data, delivering a secure and seamless user experience.</li>
+                <li><strong>Fintech App</strong>: Developed a robust fintech and trading application for Android and iOS, empowering users to manage financial transactions, trade assets, and access real-time market data, delivering a secure and seamless user experience.</li>
                 <strong>Key Features:</strong>
                 <ul>
-                  <li>Integrated <strong>real-time</strong> price fetching, enabling live market quotes and dynamic price updates for trading pairs, optimized for low-latency performance across diverse network conditions</li>
-                  <li>Implemented <strong>binary options trading</strong> functionality, allowing users to place buy/sell orders with fixed payout structures and short-term expiry times, ensuring a seamless and intuitive trading experience.</li>
-                  <li>Architected and developed <strong>a price chart system</strong> (line and candlestick charts) alongside an spot trading order placement module.</li>
-                  <li><strong>Implemented biometric authentication, app security, and auto-cancellation mechanisms</strong>, triggered by changes to PIN, face recognition, or fingerprint, enhancing user security and trust.</li>
+                  <li>Integrated <strong>real-time price fetching</strong> for live market quotes and dynamic price updates across trading pairs, optimized for low-latency performance in diverse network conditions.</li>
+                  <li>Developed <strong>real-time trading charts</strong> (line and candlestick) with integrated buy/sell order placement, featuring fixed payout structures, short-term expiry times, and direct order visualization on the chart for a seamless and intuitive trading experience.</li>
+                  <li>Designed and implemented a system coupled with a <strong>spot trading order placement module</strong> to enhance trading efficiency.</li>
+                  <li>Implemented <strong>biometric authentication</strong>, app security, and auto-cancellation mechanisms triggered by PIN, face recognition, or fingerprint changes, strengthening user security and trust.</li>
                 </ul>
                 
                 <li><strong>Social App</strong>: Developed a dynamic community application for Android and iOS, enabling users to post content, comment, like, and livestream, fostering a highly interactive and engaging user experience</li>
@@ -389,24 +395,48 @@
         <section>
           <h2>Technical Skills</h2>
           <div class="item">
-            <div class="chips">
-              <span class="chip">JavaScript</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">React Native</span>
-              <span class="chip">Expo</span>
-              <span class="chip">React JS</span>
-              <span class="chip">Node JS</span>
-              <span class="chip">Redux</span>
-              <span class="chip">Zustand</span>
-              <span class="chip">React Query</span>
-              <span class="chip">RESTful APIs</span>
-              <span class="chip">WebSocket</span>
-              <span class="chip">Firebase</span>
-              <span class="chip">OneSignal</span>
-              <span class="chip">Git</span>
-              <span class="chip">Xcode</span>
-              <span class="chip">Android Studio</span>
+            
+            <div class="technical-skills">
+            <div>
+              <li>Languages & Frameworks</li>
+              <div class="chips">
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">React Native</span>
+                <span class="chip">Expo</span>
+                <span class="chip">React JS</span>
+                <span class="chip">Node JS</span>
+              </div>
             </div>
+
+            <div>
+              <li>State Management</li>
+              <div class="chips">
+                <span class="chip">Redux</span>
+                <span class="chip">Zustand</span>
+                <span class="chip">React Query</span>
+              </div>
+            </div>
+
+            <div>
+              <li>APIs & Integration</li>
+              <div class="chips">
+                <span class="chip">RESTful APIs</span>
+                <span class="chip">WebSocket</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">OneSignal</span>
+              </div>
+            </div>
+            
+            <div>
+              <li>Tools & Version Control</li>
+              <div class="chips">
+                <span class="chip">Git</span>
+                <span class="chip">Xcode</span>
+                <span class="chip">Android Studio</span>
+              </div>
+            </div>
+
           </div>
         </section>
 
